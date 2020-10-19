@@ -1,16 +1,12 @@
 import unittest
 from quantumTheory import *
 
-
 sx = [[0, 1],
       [1, 0]]
-
 sy = [[0, -1j],
       [1j, 0]]
-
 sz = [[1, 0],
       [0, -1]]
-
 
 def mostrarRespuesta4_3_1(observable):
     """PRE: ingresa uno de los  tres spin operators
@@ -21,7 +17,6 @@ def mostrarRespuesta4_3_1(observable):
         current = translateEightnVector(el)
         answ.append(current)
     return answ
-
 
 def mostrarRespuesta4_3_2(observable):
     """PRE: ingresa uno de los  tres spin operators
@@ -39,12 +34,9 @@ def mostrarRespuesta4_3_2(observable):
         meanValueDistribution = suma(meanValueDistribution, prob)
     return meanValueDistribution
 
-
 class observableTest(unittest.TestCase):
 
     def testExercice4_3_1(self):
-        # exercice4.4.1 of Quantum Computing for Computer Sci, para el ejericio solo se pedia para Sx , pero para nosotros era para los 3 spin operators
-
         self.assertEqual(mostrarRespuesta4_3_1(sx), [[[0.7071067811865475, 0.0], [-0.7071067811865475, 0.0]],
                                                      [[0.7071067811865475, 0.0], [0.7071067811865475, 0.0]]])
         self.assertEqual(mostrarRespuesta4_3_1(sy), [[[-0.0, -0.7071067811865474], [0.7071067811865475, 0.0]],
@@ -52,7 +44,6 @@ class observableTest(unittest.TestCase):
         self.assertEqual(mostrarRespuesta4_3_1(sz), [[[1.0, 0.0], [0.0, 0.0]], [[0.0, 0.0], [1.0, 0.0]]])
 
     def testExercice4_3_2(self):
-        ## el estado inicial para el ejercicio 4.3.2 es UP luego shi = [1,0]
         self.assertEqual(mostrarRespuesta4_3_2(sx), (0.0, 0.0))
         self.assertEqual(mostrarRespuesta4_3_2(sy), (-2.7755575615628914e-16, 0.0))
         self.assertEqual(mostrarRespuesta4_3_2(sz), (1.0, 0.0))
@@ -61,10 +52,8 @@ class observableTest(unittest.TestCase):
         raiz = math.sqrt(2) / 2
         u1 = [[[0, 0], [1, 0]], [[1, 0], [0, 0]]]
         u2 = [[[raiz, 0], [raiz, 0]], [[raiz, 0], [-raiz, 0]]]
-
         self.assertEqual(isUnitaria(u1), True)
         self.assertEqual(isUnitaria(u2), True)
-
         self.assertEqual(isUnitaria(multimatriz(u1, u2)), True)
         self.assertEqual(isUnitaria(multimatriz(u1, u2)), True)
 
