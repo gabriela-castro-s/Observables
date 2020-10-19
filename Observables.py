@@ -1,5 +1,5 @@
 import unittest
-from quantumTheory import *
+from Teoriacuantica import *
 
 sx = [[0, 1],
       [1, 0]]
