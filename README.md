@@ -19,7 +19,7 @@
 
 Del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
 
-#### La carpeta Discusión de ejercicios
+#### La carpeta [Discusión](https://github.com/gabriela-castro-s/Observables/tree/main/Discusion)
 
 Contiene una explicación de los ejercicios 4.5.2 y 4.5.3 del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
 
