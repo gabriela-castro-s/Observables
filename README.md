@@ -1,11 +1,13 @@
 # Observables y medidas
 
-El siguiente programa posee las siguientes funciones en el archivo llamado :
+### El repositorio se encuentra dividido en diferentes archivos:
+
+#### El archivo [Teoriacuantica.py](https://github.com/gabriela-castro-s/Observables/blob/main/Teoriacuantica.py) se compone de una libreria con las siguientes operaciones:
+
 
 - Calcular la probabilidad de transitar de el uno al otro después de hacer la observación
 - Operacion Bra
 - Normalizacion de vectores
-- Calcular los ve
 - Observable y la probabilidad de que el sistema transite a alguno de los vectores propios después de la observación.
 - ejercicios 4.3.1, 4.3.2, 4.4.1, 4.4.2, 4.5.2 y 4.5.3 del libro.
 
