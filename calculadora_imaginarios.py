@@ -58,6 +58,11 @@ def conjugado (num):
     num1 = num[1] * -1
     return (num[0], num1)
 
+
+def sub(num1, num2):
+    answ = [num1[0] - num2[0], num1[1] - num2[1]]
+    return answ
+
 #----------------------------------Calculadora de matrices y vectores imaginarios--------------------------------------
 
 def sumav (v1, v2):
@@ -76,6 +81,20 @@ def inversoaditivo (v1):
     for i in range(len(v1)):
         ans.append((v1[i][0] * (-1), v1[i][1]*(-1)))
     return ans
+
+
+def subVect(v1, v2):
+    length = len(v1)
+    if (length == len(v2)):
+        for x in range(length):
+            v1[x] = sub(v1[x], v2[x])
+        return v1
+
+def subMat(mat1, mat2):
+    row, colum = len(mat1), len(mat1[0])
+    for i in range(row):
+        mat1[i] = subVect(mat1[i], mat2[i])
+    return mat1
 
 def multescalarvector (num1, v1):
     """Funcion que realiza la multiplicacion escalar entre un numero imaginario y un vector
@@ -233,14 +252,11 @@ def identidadmatriz(filas, columnas):
 def isUnitaria(m1):
     """Funcion que define si una matriz es unitaria o no
     (list 2D) -> Boolean"""
-    if len(m1) == len(m1[0]):
-        m1 = multimatriz(m1, matriztranspuesta(m1))
-        iden = identidadmatriz(len(m1), len(m1[0]))
-        if m1 == iden:
-            return True
-        else:
-            return True
-
+    row, col = len(m1), len(m1[0])
+    if row == col:
+        adj = adjmatriz(m1)
+        return (multimatriz(m1, adj) == identidadmatriz(row, col)) or (multimatriz(m1, adj) == multimatriz(adj, m1))
+    
 def isHermitiana(m1):
     """Funcion que define si una matriz es hermitiana o no
     (list 2D) -> Boolean"""
