@@ -8,7 +8,7 @@ sy = [[0, -1j],
 sz = [[1, 0],
       [0, -1]]
 
-def mostrarRespuesta4_3_1(observable):
+def ans4_3_1(observable):
     """PRE: ingresa uno de los  tres spin operators
        POST: retorna los posibles estados que el spin puede transitar despues de ser observado"""
     x, v = EigenValues(observable)
@@ -18,7 +18,7 @@ def mostrarRespuesta4_3_1(observable):
         answ.append(current)
     return answ
 
-def mostrarRespuesta4_3_2(observable):
+def ans4_3_2(observable):
     """PRE: ingresa uno de los  tres spin operators
        POST: retorna la media de la distribucion del spin ingresado"""
     shi = [[1, 0], [0, 0]]
@@ -37,16 +37,16 @@ def mostrarRespuesta4_3_2(observable):
 class observableTest(unittest.TestCase):
 
     def testExercice4_3_1(self):
-        self.assertEqual(mostrarRespuesta4_3_1(sx), [[[0.7071067811865475, 0.0], [-0.7071067811865475, 0.0]],
+        self.assertEqual(ans4_3_1(sx), [[[0.7071067811865475, 0.0], [-0.7071067811865475, 0.0]],
                                                      [[0.7071067811865475, 0.0], [0.7071067811865475, 0.0]]])
-        self.assertEqual(mostrarRespuesta4_3_1(sy), [[[-0.0, -0.7071067811865474], [0.7071067811865475, 0.0]],
+        self.assertEqual(ans4_3_1(sy), [[[-0.0, -0.7071067811865474], [0.7071067811865475, 0.0]],
                                                      [[0.7071067811865476, 0.0], [0.0, -0.7071067811865475]]])
-        self.assertEqual(mostrarRespuesta4_3_1(sz), [[[1.0, 0.0], [0.0, 0.0]], [[0.0, 0.0], [1.0, 0.0]]])
+        self.assertEqual(ans4_3_1(sz), [[[1.0, 0.0], [0.0, 0.0]], [[0.0, 0.0], [1.0, 0.0]]])
 
     def testExercice4_3_2(self):
-        self.assertEqual(mostrarRespuesta4_3_2(sx), (0.0, 0.0))
-        self.assertEqual(mostrarRespuesta4_3_2(sy), (-2.7755575615628914e-16, 0.0))
-        self.assertEqual(mostrarRespuesta4_3_2(sz), (1.0, 0.0))
+        self.assertEqual(ans4_3_2(sx), (0.0, 0.0))
+        self.assertEqual(ans4_3_2(sy), (-2.7755575615628914e-16, 0.0))
+        self.assertEqual(ans4_3_2(sz), (1.0, 0.0))
 
     def testExercice4_4_1(self):
         raiz = math.sqrt(2) / 2
