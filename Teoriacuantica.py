@@ -18,7 +18,7 @@ def longitud(vect):
 
 def normalizar(vect):
     """normaliza un vector dado """
-    length = Length(vect)
+    length = longitud(vect)
     for x in range(len(vect)):
         vect[x] = [vect[x][0] / length, vect[x][1] / length]
     return vect
@@ -35,7 +35,7 @@ def transicion(vect1, vect2):
 
 
 def probability(vector, position):
-    """Calcula la probabilidad de que un vector este en el estado dado"""
+    """Calcula la probabilidad de que un vector este en el estado dado( posicion )"""
     lon = longitud(vector)
     if (0 <= position < len(vector)):
         return dosdecimales(modulo(vector[position]) ** 2 / lon ** 2, False)
