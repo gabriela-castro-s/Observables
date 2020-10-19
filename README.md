@@ -16,6 +16,7 @@
 - 4.3.2
 - 4.4.1
 - 4.4.2
+
 Del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
 
 #### La carpeta Discusión de ejercicios
