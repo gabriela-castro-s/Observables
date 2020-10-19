@@ -1,6 +1,6 @@
-# Observables y medidas
+# Observables y medidas ⏱📐
 
-### El repositorio se encuentra dividido en diferentes archivos:
+### El repositorio se encuentra dividido en diferentes archivos 💾
 
 #### El archivo [Teoriacuantica.py](https://github.com/gabriela-castro-s/Observables/blob/main/Teoriacuantica.py) se compone de una libreria con las siguientes operaciones:
 
@@ -17,11 +17,11 @@
 - 4.4.1
 - 4.4.2
 
-Del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
+Del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press) 📖
 
-#### La carpeta [Discusión](https://github.com/gabriela-castro-s/Observables/tree/main/Discusion)
+#### La carpeta 📂 [Discusión](https://github.com/gabriela-castro-s/Observables/tree/main/Discusion)
 
-Contiene una explicación de los ejercicios 4.5.2 y 4.5.3 del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
+Contiene una explicación de los ejercicios 4.5.2 y 4.5.3 del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press) 📖
 
 #### Los siguientes archivos son bibliotecas utilizadas para desarrollar los apartados anteriores.
 
