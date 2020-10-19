@@ -35,7 +35,7 @@ def transicion(vect1, vect2):
 
 
 def probability(vector, position):
-    """Calcula la probabilidad de que un vector este en el estado dado( posicion )"""
+    """Calcula la probabilidad de que un vector este en el estado dado"""
     lon = longitud(vector)
     if (0 <= position < len(vector)):
         return dosdecimales(modulo(vector[position]) ** 2 / lon ** 2, False)
