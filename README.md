@@ -4,12 +4,28 @@
 
 #### El archivo [Teoriacuantica.py](https://github.com/gabriela-castro-s/Observables/blob/main/Teoriacuantica.py) se compone de una libreria con las siguientes operaciones:
 
+- Realiza la operación bra.
+- Normaliza un ket.
+- Calcula la probabilidad de que un vector este en el estado dado.
+- Hallar la varianza.
+- Calcula la probabilidad de que el sistema transite a alguno de los vectores propios después de la observación.
 
-- Calcular la probabilidad de transitar de el uno al otro después de hacer la observación
-- Operacion Bra
-- Normalizacion de vectores
-- Observable y la probabilidad de que el sistema transite a alguno de los vectores propios después de la observación.
-- ejercicios 4.3.1, 4.3.2, 4.4.1, 4.4.2, 4.5.2 y 4.5.3 del libro.
+#### El archivo [Observables.py](https://github.com/gabriela-castro-s/Observables/blob/main/Observables.py) se compone de un archivo de pruebas con los ejercicios:
+
+- 4.3.1
+- 4.3.2
+- 4.4.1
+- 4.4.2
+Del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
+
+#### La carpeta Discusión de ejercicios
+
+Contiene una explicación de los ejercicios 4.5.2 y 4.5.3 del libro de Noson S. Yanofsky, Mirco A. Mannucci _Quantum Computing for Computer Scientists_ (2008, Cambridge University Press)
+
+#### Los siguientes archivos son bibliotecas utilizadas para desarrollar los apartados anteriores.
+
+- [classicalToQuantum.py](https://github.com/gabriela-castro-s/Observables/blob/main/classicalToQuantum.py)
+- [calculadora_imaginarios.py](https://github.com/gabriela-castro-s/Observables/blob/main/calculadora_imaginarios.py)
 
 ## Comenzando 🚀
 
