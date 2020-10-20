@@ -51,7 +51,7 @@ git clone https://github.com/gabriela-castro-s/Observables
 ## Pre-requisitos 📋
 
 Para utilizar la libreria es necesario que cuente con una calculadora para vectores, matrices y números imaginarios. En este repositorio se incluye un 
-archivo de la libreria utilizada para generar las simulaciones. También se necesita una libreria para sistemas probabilisticos que también se incluye en el repositorio.
+archivo de la libreria utilizada para generar las simulaciones. Adicionalmente, se necesita una libreria para sistemas probabilisticos que también se incluye en el repositorio.
 
 La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton3 puede abrir la librería (Los pasos anteriores pueden ser replicados 
 en cualquier programa que edite archivos .py
