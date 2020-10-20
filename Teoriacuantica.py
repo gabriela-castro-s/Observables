@@ -46,7 +46,7 @@ def omegaPsi(psi, omega):
 
 
 def deltaPsi(omega, expectedValue):
-    return subMat(omega, multescalarmatrices(expectedValue, identityMatrix(omega)))
+    return subMat(omega, multescalarmatrices(expectedValue, identidadmatriz(len(omega),len(omega[0]))))
 
 
 def matrixPsi(matrix, psi):
